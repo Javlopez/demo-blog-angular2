@@ -1,11 +1,9 @@
 import { Component } from '@angular/core';
+import { AlertComponent } from 'ng2-bootstrap/ng2-bootstrap';
 
 @Component({
   selector: 'my-app',
-  template: `
-  <h3>Hello {{user.name}} </h3>
-  <h5>Welcome to the application <span style="color:red;">{{appName}}</span> </h5>
-  `
+  templateUrl: './app/home.component.html'
 })
 export class AppComponent {
   appName: string;
