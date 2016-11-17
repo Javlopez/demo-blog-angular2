@@ -1,0 +1,6 @@
+<the-post *ngIf="postSelected" [post]="postSelected"></the-post>
+<div *ngFor="let post of listPosts" class="caption">
+  <h3>{{ post.title }}</h3>
+  <p>{{ post.body }}</p>
+  <p><span class="btn btn-primary" (click)="choosePost(post)">Go to the tour</span></p>
+</div>
